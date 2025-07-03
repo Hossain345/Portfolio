@@ -1,0 +1,188 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  padding: 80px 0 60px 0;
+  text-align: center;
+}
+
+.hero .accent {
+  color: #ffe082;
+}
+
+.hero .subtitle {
+  font-size: 1.3rem;
+  margin: 15px 0 30px 0;
+  opacity: 0.95;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #ffe082;
+  color: #222;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 10px;
+}
+
+.cta-btn:hover {
+  background: #fff;
+  color: #2575fc;
+}
+
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #6a11cb;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.about h2,
+.projects h2,
+.contact h2 {
+  color: #2575fc;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(37,117,252,0.08);
+  padding: 32px 24px;
+  width: 300px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(37,117,252,0.16);
+}
+
+.project-card h3 {
+  color: #6a11cb;
+  margin-bottom: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact button {
+  background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact button:hover {
+  background: linear-gradient(120deg, #2575fc 0%, #6a11cb 100%);
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 50px 0 30px 0;
+  }
+  section {
+    padding: 30px 0;
+  }
+  .project-card {
+    width: 90%;
+    padding: 20px 10px;
+  }
+  .container {
+    width: 98%;
+  }
+} 
